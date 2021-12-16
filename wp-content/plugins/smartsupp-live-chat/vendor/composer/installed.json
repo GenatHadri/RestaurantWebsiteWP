@@ -1,0 +1,91 @@
+[
+    {
+        "name": "smartsupp/chat-code-generator",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smartsupp/chat-code-generator.git",
+            "reference": "1f63b44aeb90a1cd9e37b260a35b0ccb3377feea"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smartsupp/chat-code-generator/zipball/1f63b44aeb90a1cd9e37b260a35b0ccb3377feea",
+            "reference": "1f63b44aeb90a1cd9e37b260a35b0ccb3377feea",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.7.*"
+        },
+        "time": "2018-11-08 15:36:32",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Smartsupp": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Marek Gach",
+                "role": "lead"
+            }
+        ],
+        "description": "This simple PHP class allows you to easily generate Smartsupp.com JS chat code.",
+        "homepage": "https://www.smartsupp.com/",
+        "keywords": [
+            "chat"
+        ]
+    },
+    {
+        "name": "smartsupp/php-partner-client",
+        "version": "1.1",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/smartsupp/php-auth-client.git",
+            "reference": "caa587a89ae551f1356f083baf29d31567468020"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/smartsupp/php-auth-client/zipball/caa587a89ae551f1356f083baf29d31567468020",
+            "reference": "caa587a89ae551f1356f083baf29d31567468020",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.8.*"
+        },
+        "time": "2019-09-30 15:08:09",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Smartsupp": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Marek Gach",
+                "role": "lead"
+            }
+        ],
+        "description": "API client allows to register and login (obtain API key) from Smartsupp partner API.",
+        "homepage": "https://www.smartsupp.com/",
+        "keywords": [
+            "chat"
+        ]
+    }
+]

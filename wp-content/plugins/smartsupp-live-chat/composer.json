@@ -1,0 +1,6 @@
+{
+    "require": {
+        "smartsupp/chat-code-generator": "^1.0",
+        "smartsupp/php-partner-client": "^1.0"
+    }
+}

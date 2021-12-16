@@ -1,0 +1,27 @@
+[28-Jun-2021 10:30:17 UTC] WordPress database error Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' for query UPDATE
+					wp_blc_synch AS synch
+					JOIN wp_posts AS posts ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  SET
+					synched = 0
+				  WHERE
+					synch.last_synch < posts.post_modified made by activate_plugin, include_once('/plugins/broken-link-checker/broken-link-checker.php'), require('/plugins/broken-link-checker/core/init.php'), require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_WpdbNew->default_query
+[28-Jun-2021 10:30:17 UTC] WordPress database error Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' for query INSERT INTO wp_blc_synch(container_id, container_type, synched)
+				  SELECT posts.id, posts.post_type, 0
+				  FROM
+				    wp_posts AS posts LEFT JOIN wp_blc_synch AS synch
+					ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  WHERE
+				  	posts.post_status IN ('publish')
+	 				AND posts.post_type IN ('post', 'page')
+					AND synch.container_id IS NULL made by activate_plugin, include_once('/plugins/broken-link-checker/broken-link-checker.php'), require('/plugins/broken-link-checker/core/init.php'), require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_WpdbNew->default_query
+[02-Jul-2021 13:54:40 UTC] WordPress database error Table 'genazcfg_projekti.wp_social_users' doesn't exist for query ALTER TABLE wp_social_users ADD `social_users_id` int NOT NULL AUTO_INCREMENT PRIMARY KEY; made by activate_plugin, do_action('activate_nextend-facebook-connect/nextend-facebook-connect.php'), WP_Hook->do_action, WP_Hook->apply_filters, NextendSocialLogin::install, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection_QueryCaching->query, W3TC\_CallUnderlying->query, W3TC\DbCache_WpdbNew->query, W3TC\DbCache_WpdbInjection->query, W3TC\DbCache_WpdbNew->default_query
+[13-Jul-2021 10:40:10 UTC] PHP Fatal error:  Uncaught Error: Class 'LiteSpeed\Optimize' not found in /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/data.cls.php:56
+Stack trace:
+#0 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/conf.cls.php(576): LiteSpeed\Data->correct_tb_existance()
+#1 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/conf.cls.php(148): LiteSpeed\Conf->update_confs()
+#2 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/conf.cls.php(49): LiteSpeed\Conf->_conf_db_init()
+#3 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/core.cls.php(47): LiteSpeed\Conf->init()
+#4 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/instance.cls.php(22): LiteSpeed\Core->__construct()
+#5 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/litespeed-cache.php(178): LiteSpeed\Instance::get_instance()
+#6 /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/litespeed-cache.php(181): run_litespeed_cache()
+#7 /usr/local/lsws/add-ons/webcachemgr in /home/genazcfg/public_html/wp-content/plugins/litespeed-cache/src/data.cls.php on line 56
